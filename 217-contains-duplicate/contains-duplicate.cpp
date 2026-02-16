@@ -4,7 +4,7 @@ public:
        set<int> seen;
 
        for(int x : nums){
-            if(seen.count(x)){
+            if(seen.contains(x)){
                 return true;
             }
             seen.insert(x);
